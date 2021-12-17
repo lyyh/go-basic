@@ -1,7 +1,7 @@
 package main
 
 import (
-	"map-lession/modify"
+	"basic/map-lession/modify"
 )
 
 type Vertex struct {
