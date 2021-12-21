@@ -96,7 +96,20 @@ func newPerson(name string, age int) *student {
 		age:  age,
 	}
 }
+
+type Student struct {
+	username string
+	sex      string
+}
+
+func (stu Student) Learn() {
+	fmt.Printf("%s 正在学习", stu.username)
+}
 func main() {
+	stu := Student{
+		"豪哥", "男",
+	}
+	stu.Learn()
 	// test()
 	// instantiationDefault()
 	// instantiation()

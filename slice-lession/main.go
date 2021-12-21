@@ -33,6 +33,19 @@ func sliceWithArr() {
 	fmt.Printf("%v\n", data)
 }
 
+// 在原始数组上进行过滤
+func filter() []int {
+	var a = []int{1, 2, 3, 4, 5}
+	n := 0
+	for _, v := range a {
+		if v%2 == 0 {
+			a[n] = v
+			n++
+		}
+	}
+	return a[:n]
+}
+
 func main() {
 	// var a = make([]string, 5, 10)
 	// fmt.Println(len(a), cap(a))
@@ -41,7 +54,25 @@ func main() {
 	// }
 	// fmt.Println(a)
 
-	sliceWithArr()
+	// sliceWithArr()
 
 	// basic()
+
+	// a := []int{1, 2, 3}
+	// b := make([]int, len(a))
+	// copy(b, a)
+	// fmt.Println(b)
+	// c := append([]int(nil), a...)
+	// fmt.Println(c)
+	// // 剪切将切片a中索引i~j位置的元素剪切掉。
+	// d := append(a[:1], b[2:]...)
+	// fmt.Println(d)
+
+	// a := []int(nil)
+	// a = append(a, 1, 2)
+	// fmt.Printf("%#v", a)
+
+	list := filter()
+
+	fmt.Println("list", list)
 }

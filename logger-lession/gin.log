@@ -1,0 +1,2 @@
+{"animal":"walrus","level":"warning","msg":"A group of walrus emerges from the ocean","size":10,"time":"2021-12-19T11:53:29+08:00"}
+[GIN] 2021/12/19 - 11:53:29 | 200 |     348.086µs |       127.0.0.1 | GET      "/hello"
